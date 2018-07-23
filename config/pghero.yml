@@ -1,5 +1,5 @@
 databases:
   staging:
     url: <%= ENV["PGHERO_DATABASE_URL"] %>
-  production:
-    url: <%= ENV["READONLY_URL"] %>
+  production_follower:
+    url: <%= ENV["HEROKU_POSTGRESQL_BLUE_URL"] %>
