@@ -1,0 +1,5 @@
+databases:
+  staging:
+    url: <%= ENV["PGHERO_DATABASE_URL"] %>
+  production:
+    url: <%= ENV["READONLY_URL"] %>
